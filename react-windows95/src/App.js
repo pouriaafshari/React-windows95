@@ -1,13 +1,32 @@
 import './App.css'
-import Taskbar from './components/taskbar.js';
 
-import Taksbar from './components/taskbar.js'
+import Loading from './components/loading.js';
+import Windose from './components/windose';
 
 function App() {
+
+  function remove_loading()
+  {
+      setTimeout(() => 
+      {
+
+          const loading_div = document.getElementById('loading');
+
+          loading_div.style.animation = 'fade-out 0.3s';
+
+          loading_div.addEventListener('animationend', () => {
+              loading_div.style.display = "none";
+          });
+
+
+      }, 1500);
+  }
+
+
   return (
     <>
-      <p>No</p>
-      <Taskbar />
+      <Loading onLoad={remove_loading()}/>
+      <Windose />
     </>
   );
 }

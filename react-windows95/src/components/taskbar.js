@@ -8,12 +8,11 @@ export default function Taskbar()
 
     return(
         <div id="taskbar">
-            <div id="start-button" onclick="StartButtonOpen()">
+            <div id="start-button" onClick="StartButtonOpen()">
                 <img src={ StartIcon } alt="" />
                 <span>Start</span>
             </div>
             
-
             <div id="tabs">
                 <div class="tab" id="welcome-tab">
                     <img src={ SysIcon } alt="" />

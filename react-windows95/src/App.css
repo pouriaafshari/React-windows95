@@ -3,9 +3,74 @@ body
     margin: 0;
     padding: 0;
     border: 0;
+    text-align: center;
+
+    -moz-user-select:none; /* firefox */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE*/
+    user-select: none; /* Standard syntax */
 
     background-color: #008080;
 }
+
+@keyframes fade-out
+{
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes fade-in
+{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#loading
+{
+    cursor: none;
+    margin: auto;
+    top: 0;
+    background-color: rgb(191, 192, 130);
+    width: 100vw;
+    height: 100vh;     
+    background-image: url('./img/sky1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#windows-logo
+{
+    width: 55vw;
+    height: 55vh;
+    margin: auto;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    background-image: url('./img/windows95logo1.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#windows-logo h1{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 5em;
+    position: absolute;
+    bottom: -20vh;
+    margin: auto;
+    left: 0;
+    right: 0;
+    letter-spacing: -0.8vw;
+}
+#loading i{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 2vw;
+    top: 1vh;
+    right: 2vw;
+    position: absolute;
+}
+
 
 #taskbar
 {
@@ -14,6 +79,7 @@ body
     height: 35px;
     position: absolute;
     bottom: 0;
+    z-index: -2;
     border-top: 3px solid rgb(238, 238, 238);
 }
 #start-button
