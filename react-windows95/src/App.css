@@ -1,0 +1,130 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    background-color: #008080;
+}
+
+#taskbar
+{
+    background-color: rgb(212, 212, 212);
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    bottom: 0;
+    border-top: 3px solid rgb(238, 238, 238);
+}
+#start-button
+{
+    width: 70px;
+    height: 70%;
+    background-color: rgb(212, 212, 212);
+    border-top: 3px solid rgb(238, 238, 238);
+    border-left: 3px solid rgb(238, 238, 238);
+    border-bottom: 3px solid rgb(112, 112, 112);
+    border-right: 3px solid rgb(112, 112, 112);
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translateY(-50%);
+}
+#start-button:hover
+{
+    cursor: pointer;
+}
+.start-button-open
+{
+    background-color: rgb(200, 200, 200)!important;
+    border-bottom: 3px solid rgb(238, 238, 238)!important;
+    border-right: 3px solid rgb(238, 238, 238)!important;
+    border-top: 3px solid rgb(112, 112, 112)!important;
+    border-left: 3px solid rgb(112, 112, 112)!important;
+}
+#start-button img
+{
+    width: 25px;
+    position: absolute;
+    left: 2px;
+    height: 25px;
+    top: -1px;
+    display: inline;
+}
+#start-button span
+{
+    position: absolute;
+    display: inline;
+    font-size: 20px;
+    right: 2px;
+    top: -1px;
+    font-weight: 600;
+}
+.tab
+{
+    width: 12vw;
+    height: 100%;
+    margin-left: 2px;
+    position: relative;
+    display: inline-block;
+    background-color: rgb(212, 212, 212);
+    border-top: 3px solid rgb(238, 238, 238);
+    border-left: 3px solid rgb(238, 238, 238);
+    border-bottom: 3px solid rgb(112, 112, 112);
+    border-right: 3px solid rgb(112, 112, 112);
+}
+.tab img
+{
+    position: absolute;
+    display: inline;
+    left: 1px;
+    top: 2px;
+    width: 20px;
+}
+.tab span
+{
+    position: absolute;
+    top: 3px;
+    display: inline-block;
+    text-align: left;
+    left: 25px;
+    font-size: 14px;
+}
+
+#clock
+{
+    width: 80px;
+    height: 70%;
+    background-color: rgb(212, 212, 212);
+    border-bottom: 2px solid rgb(238, 238, 238);
+    border-right: 2px solid rgb(238, 238, 238);
+    border-top: 2px solid rgb(159, 159, 159);
+    border-left: 2px solid rgb(159, 159, 159);
+    position: absolute;
+    top: 48%;
+    right: 4px;
+    transform: translateY(-50%);
+}
+#clock span
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    left: 0;
+    right: 0;
+    font-size: 15px;
+}
+
+#tabs
+{
+    position: absolute;
+    display: flex;
+    left: 85px;
+    right: 95px;
+    top: 3px;
+    width: auto;
+    height: 22px;
+    text-align: left;
+    justify-content: left;
+}
