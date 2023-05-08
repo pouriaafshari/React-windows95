@@ -25,7 +25,8 @@ function App() {
 
   return (
     <>
-      <Loading onLoad={remove_loading()}/>
+      <Loading />
+      { remove_loading() }
       <Windose />
     </>
   );
