@@ -1,46 +1,41 @@
 body
 {
+    height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
     border: 0;
     text-align: center;
-
-    -moz-user-select:none; /* firefox */
+    background-color: #018281;
+    color: black;
+    overflow: hidden;
+    
+    -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE*/
-    user-select: none; /* Standard syntax */
-
-    background-color: #008080;
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
-@keyframes fade-out
-{
-    0% {opacity: 1;}
-    100% {opacity: 0;}
-}
-@keyframes fade-in
-{
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
+
 
 #loading
 {
-    position: absolute;
-    z-index: 5;
     cursor: none;
     margin: auto;
     top: 0;
     background-color: rgb(191, 192, 130);
     width: 100vw;
     height: 100vh;     
-    background-image: url('./img/sky1.jpg');
+    background-image: url('img/sky1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 #windows-logo
 {
+    /*background-color: rgb(160, 185, 90);*/
     width: 55vw;
     height: 55vh;
     margin: auto;
@@ -48,7 +43,7 @@ body
     top: 10vh;
     left: 0;
     right: 0;
-    background-image: url('./img/windows95logo1.png');
+    background-image: url('img/windows95logo1.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -56,7 +51,7 @@ body
 #windows-logo h1{
     font-family: sans-serif;
     font-weight: 600;
-    font-size: 5em;
+    font-size: 8vw;
     position: absolute;
     bottom: -20vh;
     margin: auto;
@@ -74,6 +69,333 @@ body
 }
 
 
+@keyframes fade-out
+{
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes fade-in
+{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+#windose
+{
+    position: absolute;
+    background-color: rgb(1,130,129);
+    /*background-image: url('img/setup.jpg');*/
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size:contain;
+}
+#start-window
+{
+    width: 50vw;
+    height: 500px;
+    background-color: rgb(212, 212, 212);
+    margin: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 20vh;
+    border-top: 3px solid rgb(238, 238, 238);
+    border-left: 3px solid rgb(238, 238, 238);
+    border-bottom: 3px solid rgb(112, 112, 112);
+    border-right: 3px solid rgb(112, 112, 112);
+}
+.window-header
+{
+    height: 24px;
+    width: 100%;
+    background-color: rgb(13, 40, 156);
+}
+.window-header h3
+{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    position: absolute;
+    left: 7px;
+    margin-top: 4px;
+    font-size: 14px;
+}
+.x-button
+{
+    display: inline;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 18px;
+    height: 18px;
+    background-color: rgb(212, 212, 212);
+    border-top: 2px solid rgb(238, 238, 238);
+    border-left: 2px solid rgb(238, 238, 238);
+    border-bottom: 2px solid rgb(112, 112, 112);
+    border-right: 2px solid rgb(112, 112, 112);
+    text-align: center;
+
+}
+.x-button:active
+{
+    border-bottom: 2px solid rgb(238, 238, 238);
+    border-right: 2px solid rgb(238, 238, 238);
+    border-top: 2px solid rgb(112, 112, 112);
+    border-left: 2px solid rgb(112, 112, 112);
+}
+.x-button span
+{
+    font-weight: 100;
+    position: absolute;
+    top: 0px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+#welcome-body
+{
+    width: 100%;
+    height: 30vh;
+    
+}
+#pfp
+{
+    width:40px;
+    height: 40px;
+    background-image: url('img/warning.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: block;
+}
+#welcome-body h4
+{
+    display: inline;
+    vertical-align: top;
+    top: 25px;
+    font-size: 16px;
+    font-weight: 100;
+    left: 70px;
+    position: absolute;
+}
+#welcome-txt
+{
+    background-color: rgb(242, 241, 237);
+    border-bottom: 1px solid rgb(238, 238, 238);
+    border-right: 1px solid rgb(238, 238, 238);
+    border-top: 1px solid rgb(148, 148, 148);
+    border-left: 1px solid rgb(148, 148, 148);
+    display: block;
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+    width: 80%;
+    height: fit-content;
+    text-align: left;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 100;
+}
+#welcome-txt span
+{
+    font-size: 22px;
+}
+#welcome-body button
+{
+    font-family: inherit;
+    font-size: 16px;
+    width: 7.5vw;
+    height: 35px;
+    position: absolute;
+    right: 2vw;
+    bottom: 2vh;
+    background-color: rgb(212, 212, 212);
+
+    border-top: 3px solid rgb(238, 238, 238);
+    border-left: 3px solid rgb(238, 238, 238);
+    border-bottom: 3px solid rgb(112, 112, 112);
+    border-right: 3px solid rgb(112, 112, 112);
+}
+#welcome-body button:active
+{
+    background-color: rgb(210, 210, 210);
+    border-bottom: 3px solid rgb(238, 238, 238);
+    border-right: 3px solid rgb(238, 238, 238);
+    border-top: 3px solid rgb(112, 112, 112);
+    border-left: 3px solid rgb(112, 112, 112);
+}
+
+#aboutme-window
+{
+    width: 40vw;
+    padding-bottom: 10px;
+    background-color: rgb(212, 212, 212);
+    margin: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 15%;
+    border-top: 3px solid rgb(238, 238, 238);
+    border-left: 3px solid rgb(238, 238, 238);
+    border-bottom: 3px solid rgb(112, 112, 112);
+    border-right: 3px solid rgb(112, 112, 112);
+}
+#aboutme-body
+{
+    width: 39vw;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: left;
+    line-height: 25px;
+    font-size: 2.3vh;
+}
+
+#projects-window
+{
+    width: 48vw;
+    height: fit-content;
+    padding-bottom: 35px;
+    background-color: rgb(212, 212, 212);
+    margin: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 15%;
+    border-top: 3px solid rgb(238, 238, 238);
+    border-left: 3px solid rgb(238, 238, 238);
+    border-bottom: 3px solid rgb(112, 112, 112);
+    border-right: 3px solid rgb(112, 112, 112);
+}
+#projects-body
+{
+    width: 47vw;
+    height: 64vh;
+    margin: auto;
+    margin-top: 3px;
+    background-color: rgb(212, 212, 212);
+    border-bottom: 3px solid rgb(238, 238, 238);
+    border-right: 3px solid rgb(238, 238, 238);
+    border-top: 3px solid rgb(112, 112, 112);
+    border-left: 3px solid rgb(112, 112, 112);
+    text-align: left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.project
+{
+    display: flex;
+    width: 98%;
+    height: 150px;
+    margin: auto;
+    margin-top: 5px;
+    border-bottom: 3px solid rgb(238, 238, 238);
+    border-right: 3px solid rgb(238, 238, 238);
+    border-top: 3px solid rgb(112, 112, 112);
+    border-left: 3px solid rgb(112, 112, 112);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.project:active
+{
+    background-color: rgb(13, 40, 156);
+    filter: contrast(0.6) brightness(0.8);
+}
+.prcomment
+{
+    width: 65%;
+    height: 150px;
+    margin: 2px;
+}
+.prpic
+{
+    width: 35%;
+    height: 100%;
+    z-index: 10;
+    background-position: center;
+    background-size: cover;
+}
+.projects-footer
+{
+    height: 20px;
+    text-align: left;
+    padding-left: 5px;
+    display: inline-block;
+    background-color: rgb(212, 212, 212);
+    left: 4px;
+    right: 4px;
+    position: absolute;
+    margin-top: 5px;
+    background-color: rgb(212, 212, 212);
+    border-bottom: 3px solid rgb(238, 238, 238);
+    border-right: 3px solid rgb(238, 238, 238);
+    border-top: 3px solid rgb(112, 112, 112);
+    border-left: 3px solid rgb(112, 112, 112);
+}
+
+#skills-window
+{
+    width: 40vw;
+    height: 69vh;
+    background-color: rgb(212, 212, 212);
+    margin: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 15%;
+    border-top: 3px solid rgb(238, 238, 238);
+    border-left: 3px solid rgb(238, 238, 238);
+    border-bottom: 3px solid rgb(112, 112, 112);
+    border-right: 3px solid rgb(112, 112, 112);
+}
+.tools-bar
+{
+    width: 40vw;
+    height: 20px;
+    text-align: left;
+}
+.tools-bar div
+{
+    display: inline-block;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.tools-bar div:hover
+{
+    background-color: rgb(13, 40, 156);
+    color: white;
+    cursor: pointer;
+}
+#skills-body
+{
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 5px;
+    top: 42px;
+    left: 2px;
+    right: 2px;
+    margin-top: 3px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(238, 238, 238);
+    border-right: 3px solid rgb(238, 238, 238);
+    border-top: 3px solid rgb(112, 112, 112);
+    border-left: 3px solid rgb(112, 112, 112);
+    text-align: left;
+    font-size: 2.5vh;
+}
+#skills-body p
+{
+    vertical-align: top;
+    margin: 5px;
+}
+
 #taskbar
 {
     background-color: rgb(212, 212, 212);
@@ -81,7 +403,6 @@ body
     height: 35px;
     position: absolute;
     bottom: 0;
-    z-index: -2;
     border-top: 3px solid rgb(238, 238, 238);
 }
 #start-button
@@ -127,6 +448,84 @@ body
     right: 2px;
     top: -1px;
     font-weight: 600;
+}
+#start-button-window
+{
+    width: 240px;
+    height: 350px;
+    position: absolute;
+    display: none;
+    z-index: 2;
+    bottom: 40px;
+    left: 2px;
+    background-color: rgb(212, 212, 212);
+    border-top: 3px solid rgb(238, 238, 238);
+    border-left: 3px solid rgb(238, 238, 238);
+    border-bottom: 3px solid rgb(112, 112, 112);
+    border-right: 3px solid rgb(112, 112, 112);
+}
+#start-button-window span
+{
+    display: block;
+    height: 100%;
+    width: 45px;
+    background-color: rgb(186, 186, 186);
+    color: rgb(212, 212, 212);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 40px;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: -3px;
+}
+#start-window-container
+{
+    width: 195px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0%;
+}
+.start-window-icon
+{
+    width: 100%;
+    height: 50px;
+    text-align: left;
+}
+.start-window-icon:hover
+{
+    background-color: rgb(13, 40, 156);
+    cursor: pointer;
+}
+.start-window-icon img
+{
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 30px;
+}
+.start-window-icon p
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 8px;
+    margin-top: 15px;
+    font-size: 2.3vh;
+}
+
+#tabs
+{
+    position: absolute;
+    display: flex;
+    left: 85px;
+    right: 95px;
+    top: 3px;
+    width: auto;
+    height: 22px;
+    text-align: left;
+    justify-content: left;
 }
 .tab
 {
@@ -184,19 +583,6 @@ body
     font-size: 15px;
 }
 
-#tabs
-{
-    position: absolute;
-    display: flex;
-    left: 85px;
-    right: 95px;
-    top: 3px;
-    width: auto;
-    height: 22px;
-    text-align: left;
-    justify-content: left;
-}
-
 #desktop
 {
     width: 100%;
@@ -234,4 +620,3 @@ body
 {
     filter: contrast(0.6) brightness(0.8);
 }
-

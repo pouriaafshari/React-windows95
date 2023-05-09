@@ -5,6 +5,7 @@ import Desktop from './desktop'
 
 export default function Windose()
 {
+    function hale(){console.log("kkk")}
     return(
         <>
             <Desktop />
